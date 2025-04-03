@@ -1,7 +1,7 @@
 # Ciao. I'm Sundar
 
 
-> "🌟 Random Quote: PLACEHOLDER_QUOTE 🌟"
+> "🌟 Random Quote:  🌟"
 
 ### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
 ### 💻 Building things with JavaScript, TypeScript, and C++  
