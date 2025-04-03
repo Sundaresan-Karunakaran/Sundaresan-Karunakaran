@@ -1,7 +1,7 @@
 # Ciao. I'm Sundar
 
 
-> "🌟 Random Quote:  🌟"
+> "🌟 Quote (not by me of course):  🌟"
 
 ### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
 ### 💻 Building things with JavaScript, TypeScript, and C++  
