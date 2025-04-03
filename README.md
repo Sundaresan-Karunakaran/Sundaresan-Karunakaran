@@ -1,16 +1,23 @@
-## Hi there 👋
+# Ciao. I'm Sundar
 
-<!--
-**Sundaresan-Karunakaran/Sundaresan-Karunakaran** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> PLACEHOLDER_QUOTE
 
-Here are some ideas to get you started:
+### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
+### 💻 Building things with JavaScript, TypeScript, and C++  
+### 🌱 Currently exploring formal verification and its applications in software engineering  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=Sundaresan-Karunakaran&show_icons=true&theme=outrun)
+
+### 🛠️ Tech Stack  
+- **Frontend:** React, Next.js  
+- **Backend:** Node.js, NestJS, Flask, Django  
+- **Databases:** MongoDB, SQL  
+- **Other:** Docker, Linux, Git, CI/CD  
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,react,nextjs,nodejs,flask,django,mongodb,docker,linux,git)](https://skillicons.dev)
+
+
+
+## Let's talk!
+- Connect with me on [Linkedin](https://www.linkedin.com/in/sundaresan-k-701465202/)
+- My portfolio [website](https://sundaresan-karunakaran.github.io/)
