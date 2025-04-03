@@ -18,7 +18,7 @@ jobs:
 
       - name: Fetch random quote
         run: |
-          QUOTE=$(curl -s "https://api.quotable.io/quotes/random?tags=technology,famous-quotes" | jq -r '.[0].content + " - " + .[0].author')
+          QUOTE=$(curl -s "http://api.quotable.io/quotes/random?tags=technology,famous-quotes" | jq -r '.[0].content + " - " + .[0].author')
           echo "Quote fetched: $QUOTE"
           echo "README before:"
           cat README.md
