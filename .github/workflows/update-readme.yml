@@ -19,7 +19,12 @@ jobs:
       - name: Fetch random quote
         run: |
           QUOTE=$(curl -s "https://api.quotable.io/quotes/random?tags=technology,famous-quotes" | jq -r '.[0].content + " - " + .[0].author')
+          echo "Quote fetched: $QUOTE"
+          echo "README before:"
+          cat README.md
           sed -i "s|PLACEHOLDER_QUOTE|$QUOTE|g" README.md
+          echo "README after:"
+          cat README.md
 
       - name: Commit and push changes
         run: |
