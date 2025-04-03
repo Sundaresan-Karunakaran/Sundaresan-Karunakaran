@@ -1,6 +1,6 @@
 # Ciao. I'm Sundar
 
-> PLACEHOLDER_QUOTE
+> 
 
 ### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
 ### 💻 Building things with JavaScript, TypeScript, and C++  
