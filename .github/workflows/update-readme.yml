@@ -17,19 +17,50 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Fetch random quote
+        id: fetch-quote
         run: |
+          # Use the API endpoint that works for you
           QUOTE=$(curl -s "http://api.quotable.io/quotes/random?tags=technology,famous-quotes" | jq -r '.[0].content + " - " + .[0].author')
           echo "Quote fetched: $QUOTE"
-          echo "README before:"
-          cat README.md
-          sed -i "s|PLACEHOLDER_QUOTE|$QUOTE|g" README.md
-          echo "README after:"
-          cat README.md
+          
+          # Check if quote is empty
+          if [ -z "$QUOTE" ] || [ "$QUOTE" = " - " ]; then
+            echo "API call failed, using fallback quote"
+            QUOTE="Technology is best when it brings people together. - Matt Mullenweg"
+          fi
+          
+          # Escape any special characters for sed
+          QUOTE_ESCAPED=$(echo "$QUOTE" | sed 's/[\/&]/\\&/g')
+          echo "Escaped quote: $QUOTE_ESCAPED"
+          
+          # Store quote in output variable for later steps
+          echo "quote=$QUOTE_ESCAPED" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        run: |
+          # Get the quote from previous step
+          QUOTE="${{ steps.fetch-quote.outputs.quote }}"
+          
+          # First time setup - convert the PLACEHOLDER_QUOTE to our marker system
+          if grep -q "PLACEHOLDER_QUOTE" README.md; then
+            echo "First-time setup: Converting placeholder to marker system"
+            sed -i 's/> "🌟 Quote (not by me of course): PLACEHOLDER_QUOTE 🌟"/> "🌟 Quote (not by me of course): <!-- QUOTE-MARKER -->PLACEHOLDER_QUOTE<!-- END-QUOTE-MARKER --> 🌟"/' README.md
+          fi
+          
+          # Now replace the content between markers
+          if grep -q "<!-- QUOTE-MARKER -->" README.md; then
+            echo "Found quote markers in README, replacing quote"
+            sed -i 's/<!-- QUOTE-MARKER -->.*<!-- END-QUOTE-MARKER -->/<!-- QUOTE-MARKER -->'"$QUOTE"'<!-- END-QUOTE-MARKER -->/' README.md
+          else
+            echo "No markers found. README might need manual adjustment."
+            cat README.md
+          fi
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions@github.com"
           git add README.md
-          git commit -m "Updated README with a new quote"
-          git push
+          
+          # Only commit if there are changes
+          git diff --staged --quiet || (git commit -m "Updated README with a new quote" && git push)

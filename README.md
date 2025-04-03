@@ -1,7 +1,7 @@
 # Ciao. I'm Sundar
 
 
-> "🌟 Quote (not by me of course):  🌟"
+> "🌟 Quote (not by me of course): PLACEHOLDER_QUOTE 🌟"
 
 ### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
 ### 💻 Building things with JavaScript, TypeScript, and C++  
