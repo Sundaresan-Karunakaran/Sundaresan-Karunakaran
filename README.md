@@ -1,7 +1,7 @@
 # Ciao. I'm Sundar
 
 
-> "🌟 Quote (not by me of course): <!-- QUOTE-MARKER -->If you can't explain it simply, you don't understand it well enough. - Albert Einstein<!-- END-QUOTE-MARKER --> 🌟"
+> "🌟 Quote (not by me of course): <!-- QUOTE-MARKER -->Great ideas often receive violent opposition from mediocre minds. - Albert Einstein<!-- END-QUOTE-MARKER --> 🌟"
 
 ### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
 ### 💻 Building things with JavaScript, TypeScript, and C++  
