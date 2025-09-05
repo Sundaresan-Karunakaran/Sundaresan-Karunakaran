@@ -1,7 +1,7 @@
 # Ciao. I'm Sundar
 
 
-> "🌟 Quote (not by me of course): <!-- QUOTE-MARKER -->Technology is best when it brings people together. - Matt Mullenweg<!-- END-QUOTE-MARKER --> 🌟"
+> "🌟 Quote (not by me of course): <!-- QUOTE-MARKER -->It is through science that we prove, but through intuition that we discover. - Henri Poincaré<!-- END-QUOTE-MARKER --> 🌟"
 
 ### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
 ### 💻 Building things with JavaScript, TypeScript, and C++  
