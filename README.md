@@ -1,7 +1,7 @@
 # Ciao. I'm Sundar
 
 
-> "🌟 Quote (not by me of course): <!-- QUOTE-MARKER -->Imagination is more important than knowledge. For while knowledge defines all we currently know and understand, imagination points to all we might yet discover and create. - Albert Einstein<!-- END-QUOTE-MARKER --> 🌟"
+> "🌟 Quote (not by me of course): <!-- QUOTE-MARKER -->If you can't explain it simply, you don't understand it well enough. - Albert Einstein<!-- END-QUOTE-MARKER --> 🌟"
 
 ### 🚀 Full-Stack Developer | Passionate about Web Development & Formal Verification  
 ### 💻 Building things with JavaScript, TypeScript, and C++  
